@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="home">
+        <div class="content">
+            <div class="stars"></div>
+            <img class="bgc" src="./img/imgs2.png" width="100%" alt="">
+            <h3 class="title">Welcome to My Portfolio</h3>
+            <h3 class="titles">Je vous souhaite heureuse chaque jour</h3>
+            <img class="icon" src="./img/down.png" alt="">
+            <div class='ribbon'>
+                <a href='./index.html'><span>Home</span></a>
+                <a href='./about.html'><span>About</span></a>
+                <a href='./form.html'><span>Form</span></a>
+
+            </div>
+
+        </div>
+        <div class="icons">
+            <div class="icons_items">
+                <img class="icons_items_imgs" src="./img/phone.png" height="100" width="80" alt="">
+                <span>647-550-4531</span>
+            </div>
+            <div class="icons_items">
+                <img class="icons_items_imgs" src="./img/email.png" height="100" width="80" alt="">
+                <span>Scottie.wang@yahoo.com</span>
+            </div>
+            <div class="icons_items">
+                <img class="icons_items_imgs" src="./img/home.png" height="100" width="80" alt="">
+                <span>85 McMahom dr, North York</span>
+            </div>
+        </div>
+        <div class="introduce">
+            <h3 class="project">Projects</h3>
+            <div class="introduce_item">
+                <img class="introduce_item_img" src="./img/TsrL.gif" alt="">
+                <span class="introduce_item_title">We trained an AI agent to beat the classic Mario game. I was
+                    mainly responsible for writing the environment and comparing the
+                    infl uence of DQN and DDQN algorithms on the clearance
+                    effi ciency of this agent.</span>
+
+            </div>
+            <div class="introduce_item">
+
+                <span class="introduce_item_titles">A query APP for elders, which can search all the new test points
+                    and queuing situations in the city. It is available in both mobile and
+                    web version, and great human-computer interaction design(UI)</span>
+                <img class="introduce_item_img" src="./img/6.gif" alt="">
+            </div>
+            <div class="introduce_item">
+                <img class="introduce_item_img" src="./img/imgs3.jpg" alt="">
+                <span class="introduce_item_title">A distinctive Pac-Man game where you capture all the points to win before being eaten by a ghost. A variety of search algorithms and path planning are used.</span>
+            </div>
+        </div>
+        <audio autoplay="autoplay" id="audio" loop="loop">
+                <source src="./video/music.mp3" type="audio/MP3">
+               
+        </audio>
+        <img class="music_img" src="./img/music_img.png" alt="">
+    </div>
+
+</body>
+<script>
+    let mucics = document.getElementById('audio')
+    document.body.addEventListener('mousemove', function() {
+        setTimeout(() => {
+            mucics.play();
+        }, 2000);
+    }, false);
+</script>
+
+</html>
